@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/gamepad-solid.svg" />
       </Head>
-      <main className={``} style={{height:'100vh'}}>
+      <main>
       <Content/>
       </main>
     </>

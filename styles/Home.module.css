@@ -1,15 +1,7 @@
-.test{
-  text-decoration: dotted #ccc underline;
-}
-.test:hover{
-  text-decoration: underline;
-}
 .warp{
-  /* width: 100%; */
-  width: calc(100% - 30%);
-  /* border:1px solid #fa0; */
+  width: calc(100% - 30%); 
   background-image: linear-gradient(to bottom,#0566a7,#0a5383);
-  padding :5px;
+  padding :5px 20px;
   margin: 5px auto;
   box-sizing: border-box;
   filter:saturate(.8);
@@ -27,15 +19,16 @@
   line-height: 1rem;
   padding-inline:10px ;
 }
-.add {
-  
+.add {  
+  display: block;
   margin-top: 20px;
+  margin-inline: auto;
   background: #FF9720;
   color: #fff;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border: none;
   font-size: 20px;
-  width: 100%;
+  width: calc(100% - 30%);
   padding: 15px
 }
 .input-title{
@@ -47,18 +40,27 @@
   margin-inline: 20px;
 }
 .item{
+  display: grid;
+  grid-template-columns: .5fr .5fr 1fr .5fr .3fr;
+  grid-template-rows: minmax(20px, 30px);
   width: 100%;
   border-bottom: 1px solid #000;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #FF9720;
+}
+.item div {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: start; /* 水平居中 */
 }
 .remove{
   border: 0;
   background-color: rgb(212, 101, 101);
   color: #fff;
   padding: 10px;
+}
+.option-btn{
+  font-size: 14px;
+  padding: 5px;
 }
