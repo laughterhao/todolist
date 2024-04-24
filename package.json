@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "json-server --watch db.json"
+    "json-server": "node server.js"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.23",
