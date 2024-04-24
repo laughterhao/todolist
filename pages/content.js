@@ -8,12 +8,11 @@ import Style from "@/styles/Home.module.css";
 async function fetchData(setData){
   const res = await fetch(API_GET_DATA)
   const {data} = await res.json()
-  console.log(data)
   setData(data)
 }
 
 async function fetchSetData(data){
-  const res = await fetch(API_GET_DATA,{
+   await fetch(API_GET_DATA,{
     method:"PUT",
     headers:{
       'Content-type':'application/json'
