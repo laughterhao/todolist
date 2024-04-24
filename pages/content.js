@@ -30,7 +30,7 @@ export default function Content() {
     if(!submittingStates.current){
       return
     }
-    
+    console.log(data)
     fetchSetData(data).then(data => submittingStates.current = false)
   }, [data]);
   useEffect(() => {
